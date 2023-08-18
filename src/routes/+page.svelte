@@ -9,7 +9,7 @@
 		);
 
 		p5.setup = () => {
-			p5.createCanvas(500, 500);
+			p5.createCanvas(1920, 1080);
 			p5.noStroke();
 			p5.max_distance = p5.dist(0, 0, p5.width, p5.height);
 		};
