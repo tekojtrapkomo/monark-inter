@@ -1,7 +1,6 @@
 <script>
 	import P5 from 'p5-svelte';
-	let windowWidth = window.innerWidth;
-	let windowHeight = window.innerHeight;
+
 	// @ts-ignore
 	const sketch = (p5) => {
 		// @ts-ignore
@@ -10,7 +9,7 @@
 		);
 
 		p5.setup = () => {
-			p5.createCanvas(windowWidth, windowHeight);
+			p5.createCanvas(500, 500);
 			p5.noStroke();
 			p5.max_distance = p5.dist(0, 0, p5.width, p5.height);
 		};
